@@ -4,10 +4,6 @@ import curses
 ESP8266_ADDR = "" # local IP of esp8266
 ESP8266_PORT = 8888
 
-# implement velocity and acceleration later
-velocity = 180
-acceleration = 0
-
 movement_keys = [curses.KEY_RIGHT, curses.KEY_LEFT, curses.KEY_UP, curses.KEY_DOWN ]
 is_manual = True
 
