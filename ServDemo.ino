@@ -60,10 +60,10 @@ void loop() {
   WiFiClient c_client = ControlServer.available();
   if(c_client){
     while(c_client.connected()){
-        while(c_client.available() > 0){ // fix potential overflow error. Just finish the POC though
+        while(c_client.available() > 0){ // fix potential overflow error. Current code serves as a POC
             c_char = c_client.read();
             if(c_char == "\n" and Data.length() >= 1){
-                int movement = Data.toInt(); // will default to 0 of no valid conversion
+                int movement = Data.toInt(); // will default to 0 if no valid conversion
                 Data= "";
                 if(CurrentServo){
                   CurrentServo = 0;
