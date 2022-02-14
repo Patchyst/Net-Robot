@@ -1,7 +1,7 @@
 import socket
 import curses
 
-ESP8266_ADDR = "192.168.7.242"
+ESP8266_ADDR = "" # local IP of esp8266
 ESP8266_PORT = 8888
 
 # implement velocity and acceleration later
